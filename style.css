@@ -1,0 +1,12 @@
+.col{
+    flex: auto;
+    flex-direction: column;
+}
+.row{
+    flex: auto;
+    flex-direction: row;
+}
+
+/*colors:
+pricipal - green-800
+secundaria - white
