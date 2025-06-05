@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notícias - EcoBairro</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <div class="flex flex-col min-h-screen">
+      <!-- Navbar -->
+      <header
+        class="flex px-[5%] items-center bg-green-800 text-white justify-between shadow-md h-[72px]"
+      >
+        <div class="flex items-center gap-16">
+          <a href="index.html" class="flex items-center">
+            <img src="assets/EcoBairro.png" alt="logo" class="max-h-8" />
+          </a>
+          <nav class="flex gap-10 font-medium text-lg">
+            <a href="#" class="text-green-200 font-bold">Notícias</a>
+            <a
+              href="quem-somos.html"
+              class="hover:text-green-200 font-bold hover:scale-110 duration-200"
+              >Quem Somos</a
+            >
+            <a
+              href="contato.html"
+              class="hover:text-green-200 font-bold hover:scale-110 duration-200"
+              >Contato</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <!-- Conteúdo -->
+      <main class="flex flex-col px-[5%] py-12 bg-white flex-grow">
+        <h1 class="text-4xl font-bold mb-6 text-gray-800">Notícias</h1>
+        <p class="text-lg text-gray-600 mb-4">
+          Acompanhe as últimas atualizações sobre sustentabilidade, coleta
+          seletiva e ações comunitárias pelo meio ambiente.
+        </p>
+
+        <!-- Conteúdo de exemplo -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <div class="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+            <img
+              src="assets/meio-ambiente-834x298.jpg"
+              class="w-full h-48 object-cover"
+              alt="Imagem notícia 1"
+            />
+            <div class="p-6">
+              <h2 class="font-semibold text-lg text-gray-800 mb-2">
+                Dia Mundial do Meio Ambiente: Sesc RJ celebra com programação
+                especial em suas unidades
+              </h2>
+              <p class="text-gray-600 text-sm">
+                O Dia Mundial do Meio Ambiente, comemorado em 5 de junho, é uma
+                oportunidade para refletirmos sobre nossos hábitos e a
+                responsabilidade coletiva na preservação do planeta. Alinhado ao
+                seu compromisso com a sustentabilidade e a educação ambiental, o
+                Sesc RJ preparou uma programação especial durante todo o mês de
+                junho, com atividades gratuitas em diversas unidades do estado.
+              </p>
+              <div class="flex items-center gap-2 text-green-700 font-medium">
+                <a
+                  target="_blank"
+                  href="https://www.sescrio.org.br/noticias/sustentabilidade/dia-mundial-do-meio-ambiente-sesc-rj-celebra-com-programacao-especial-em-suas-unidades/"
+                >
+                  <span class="recycle-icon">♻</span> Saiba Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+            <img
+              src="assets/sss.jpeg"
+              class="w-full h-48 object-cover"
+              alt="Imagem notícia 2"
+            />
+            <div class="p-6">
+              <h2 class="font-semibold text-lg text-gray-800 mb-2">
+                Semana Mundial do Meio Ambiente: TSE reforça compromisso com a
+                sustentabilidade
+              </h2>
+              <p class="text-gray-600 text-sm">
+                O Tribunal Superior Eleitoral (TSE) adere às comemorações da
+                Semana do Meio Ambiente e lança, nesta quinta-feira, 5 de junho
+                (Dia Mundial do Meio Ambiente), mais uma ação de alinhamento com
+                a agenda ambiental e de desenvolvimento sustentável. Na ocasião,
+                será divulgado o Plano de Gestão de Resíduos Sólidos (PGRS) do
+                Tribunal.
+              </p>
+              <div class="flex items-center gap-2 text-green-700 font-medium">
+                <a
+                  target="_blank"
+                  href="https://www.tse.jus.br/comunicacao/noticias/2025/Junho/semana-mundial-do-meio-ambiente-tse-reforca-compromisso-com-a-sustentabilidade"
+                >
+                  <span class="recycle-icon">♻</span> Saiba Mais</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="index.html"
+          class="inline-block mt-10 text-green-700 hover:underline"
+          >← Voltar à página inicial</a
+        >
+      </main>
+    </div>
+  </body>
+</html>

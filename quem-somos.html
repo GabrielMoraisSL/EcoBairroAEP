@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quem Somos - EcoBairro</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+  <header
+        class="flex px-[5%] items-center bg-green-800 text-white justify-between shadow-md h-[72px]"
+      >
+        <div class="flex items-center gap-16">
+          <a href="index.html" class="flex items-center">
+            <img src="assets/EcoBairro.png" alt="logo" class="max-h-8" />
+          </a>
+          <nav class="flex gap-10 font-medium text-lg">
+            <a href="noticias.html" class="hover:text-green-200 font-bold"
+              >Notícias</a
+            >
+            <a href="#" class="text-green-200 font-bold"
+              >Quem Somos</a
+            >
+            <a href="contato.html" class="hover:text-green-200 font-bold">Contato</a>
+          </nav>
+        </div>
+      </header>
+
+  <main class="flex flex-col px-[5%] py-12 bg-white flex-grow">
+    <h1 class="text-4xl font-bold mb-6 text-gray-800">Quem Somos</h1>
+    <p class="text-lg text-gray-600 mb-4 max-w-3xl">
+      O <strong>EcoBairro</strong> é um projeto voltado à conscientização ambiental e ao incentivo de práticas sustentáveis em comunidades urbanas.
+      Nosso objetivo é informar, engajar e apoiar ações que promovam um futuro mais verde e responsável.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div class="bg-gray-100 rounded-lg shadow-sm p-6 flex flex-col justify-between">
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Missão</h2>
+        <p class="text-gray-600 text-sm">
+          Promover a educação ambiental, incentivar a coleta seletiva e facilitar o acesso a informações sobre sustentabilidade nas cidades.
+        </p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg shadow-sm p-6 flex flex-col justify-between">
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Visão</h2>
+        <p class="text-gray-600 text-sm">
+          Ser uma referência em engajamento comunitário sustentável, conectando pessoas, ideias e soluções para um meio ambiente melhor.
+        </p>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg shadow-sm p-6 flex flex-col justify-between">
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Valores</h2>
+        <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+          <li>Transparência</li>
+          <li>Colaboração</li>
+          <li>Respeito à natureza</li>
+          <li>Compromisso social</li>
+        </ul>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg shadow-sm p-6 flex flex-col justify-between">
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Equipe</h2>
+        <p class="text-gray-600 text-sm">
+          Somos um grupo de voluntários, estudantes e especialistas apaixonados por sustentabilidade e transformação urbana.
+        </p>
+      </div>
+    </div>
+
+    <a href="index.html" class="inline-block mt-10 text-green-700 hover:underline">← Voltar à página inicial</a>
+  </main>
+</body>
+</html>
