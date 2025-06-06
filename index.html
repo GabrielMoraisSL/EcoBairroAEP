@@ -5,254 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EcoBairro - Conscientização e Pontos de Coleta.</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
       body {
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-          "Noto Color Emoji";
-      }
-      .arrow-down-icon {
-        transform: rotate(90deg);
-        display: inline-block;
-        font-size: 1.25rem;
-        line-height: 1;
-      }
-      .recycle-icon {
-        font-size: 2.5rem;
-        line-height: 1;
+        font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
       }
     </style>
   </head>
-  <body>
-    <div class="flex flex-col bg-gray-50 min-h-screen">
-      <!-- Navbar -->
-      <header
-        class="flex px-[5%] items-center bg-green-800 text-white justify-between shadow-md h-[72px]"
-      >
-        <div class="flex items-center gap-16">
-          <a href="#" class="flex items-center">
-            <img src="assets/EcoBairro.png" alt="logo" class="max-h-8" />
+  <body class="bg-slate-50">
+    <div class="flex flex-col min-h-screen">
+      <header class="flex px-6 lg:px-8 items-center bg-emerald-800 text-white justify-between shadow-lg h-20">
+        <div class="flex items-center gap-12">
+          <a href="index.html" class="flex items-center">
+            <img src="assets/EcoBairro.png" alt="logo" class="h-9 w-auto" />
           </a>
-          <nav class="flex gap-10 font-medium text-lg">
-            <a href="noticias.html" class="hover:text-green-200 font-bold"
-              >Notícias</a
-            >
-            <a href="quem-somos.html" class="hover:text-green-200"
-              >Quem Somos</a
-            >
-            <a href="contato.html" class="hover:text-green-200">Contato</a>
+          <nav class="hidden md:flex gap-8 font-medium text-base">
+            <a href="index.html" class="text-white font-semibold border-b-2 border-emerald-500 pb-1">Início</a>
+            <a href="noticias.html" class="text-emerald-200 hover:text-white border-b-2 border-transparent pb-1 transition-colors duration-300">Notícias</a>
+            <a href="quem-somos.html" class="text-emerald-200 hover:text-white border-b-2 border-transparent pb-1 transition-colors duration-300">Quem Somos</a>
+            <a href="contato.html" class="text-emerald-200 hover:text-white border-b-2 border-transparent pb-1 transition-colors duration-300">Contato</a>
           </nav>
         </div>
-
-        <!-- Barra de pesquisa -->
         <form class="flex items-center" action="#" method="GET">
-          <input
-            type="text"
-            name="search"
-            placeholder="Buscar..."
-            class="bg-white rounded-l-md px-3 py-1 text-gray-800 focus:outline-none"
-          />
-          <button
-            type="submit"
-            class="bg-green-600 hover:bg-green-700 px-3 py-1 rounded-r-md font-semibold"
-          >
-            🔍
+          <input type="text" name="search" placeholder="Buscar..." class="bg-emerald-900/50 rounded-l-md px-4 py-2 text-white placeholder-emerald-300 focus:outline-none focus:bg-emerald-900"/>
+          <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 p-2.5 rounded-r-md transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" /></svg>
           </button>
         </form>
       </header>
 
-      <!-- Conteúdo da página -->
-      <div class="flex flex-grow bg-gray-50 min-h-screen">
-        <div
-          class="flex flex-col px-[5%] py-12 text-start bg-white w-2/3 border-r border-gray-200"
-        >
-          <div class="flex flex-col gap-8">
-            <div class="flex justify-between items-center pb-4">
-              <span class="font-bold text-gray-800 text-4xl"
-                >Conscientização Ambiental</span
-              >
-              <span class="text-gray-500 text-3xl font-light arrow-down-icon"
-                >&gt;</span
-              >
-            </div>
-
-            <div class="flex flex-col gap-6">
-              <span class="text-base leading-relaxed text-gray-600 max-w-xl">
-                Fique por dentro das últimas atualizações sobre meio ambiente,
-                sustentabilidade e iniciativas comunitárias. Acompanhe notícias
-                sobre pontos de coleta, eventos ecológicos e projetos que
-                impactam positivamente o nosso planeta. Nosso portal é dedicado
-                a manter você informado e engajado em ações que fazem a
-                diferença para um futuro mais sustentável.
-              </span>
-            </div>
-
-            <div class="flex gap-4 pt-4">
-              <button
-                onclick="window.location.href='noticias.html'"
-                class="bg-green-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
-              >
-                Saiba Mais
+      <div class="flex flex-grow">
+        <main class="w-full md:w-2/3 bg-white p-6 md:p-12">
+          <div class="flex flex-col gap-10">
+            <div class="border-b border-slate-200 pb-6">
+              <h1 class="font-bold text-slate-800 text-5xl tracking-tight">Conscientização Ambiental</h1>
+              <p class="mt-4 text-lg leading-relaxed text-slate-600 max-w-2xl">
+                Fique por dentro das últimas atualizações sobre meio ambiente, sustentabilidade e iniciativas comunitárias. Nosso portal é dedicado a manter você informado e engajado em ações que fazem a diferença.
+              </p>
+              <button onclick="window.location.href='noticias.html'" class="mt-6 bg-emerald-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-emerald-700 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                Explorar Todas as Notícias
               </button>
             </div>
-
-            <div class="grid grid-cols-2 gap-6 mt-12">
-              <div
-                class="bg-gray-100 rounded-lg shadow-sm overflow-hidden flex flex-col"
-              >
-                <img
-                  src="assets/images.jpg"
-                  alt="Pessoas reciclando"
-                  class="w-full h-48 object-cover"
-                />
-                <div class="p-6 flex flex-col gap-3">
-                  <h3 class="font-semibold text-lg text-gray-800">
-                    Cidadania e Coleta
-                  </h3>
-                  <p class="text-gray-600 text-sm leading-relaxed">
-                    Uma ação ambiental já bem tradicional em Umuarama foi
-                    confirmada na programação dos 70 anos da Capital da Amizade.
-                    No próximo dia 3, das 9h as 16h, será realizada mais uma
-                    edição da Campanha e-Lixo, uma parceria entre a Prefeitura,
-                    por meio da Secretaria Municipal do Meio Ambiente, e o
-                    Instituto Federal do Paraná (IFPR).
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-slate-50 rounded-xl shadow-md overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <img src="assets/images.jpg" alt="Pessoas reciclando" class="w-full h-48 object-cover"/>
+                <div class="p-6 flex flex-col flex-grow">
+                  <h3 class="font-semibold text-lg text-slate-800">Cidadania e Coleta em Umuarama</h3>
+                  <p class="text-slate-600 text-sm leading-relaxed mt-2 flex-grow">
+                    Confirmada na programação dos 70 anos da Capital da Amizade a tradicional campanha e-Lixo, uma parceria da Prefeitura com o IFPR.
                   </p>
-                  <div
-                    class="flex items-center gap-2 text-green-700 font-medium"
-                  >
-                    <a
-                      target="_blank"
-                      href="https://www.umuarama.pr.gov.br/noticias/meio-ambiente/campanha-e-lixo-acontece-na-prxima-tera-feira-no-espao-ao-lado-do-estdio"
-                    >
-                      <span class="recycle-icon">♻</span> Saiba Mais</a
-                    >
-                  </div>
+                  <a target="_blank" href="https://www.umuarama.pr.gov.br/noticias/meio-ambiente/campanha-e-lixo-acontece-na-prxima-tera-feira-no-espao-ao-lado-do-estdio" class="mt-4 font-semibold text-emerald-600 hover:text-emerald-800 self-start">Saiba Mais →</a>
                 </div>
               </div>
-
-              <div
-                class="bg-gray-100 rounded-lg shadow-sm overflow-hidden flex flex-col"
-              >
-                <img
-                  src="assets/im.jpg"
-                  alt="Família plantando"
-                  class="w-full h-48 object-cover"
-                />
-                <div class="p-6 flex flex-col gap-3">
-                  <h3 class="font-semibold text-lg text-gray-800">
-                    Ações Sustentáveis
-                  </h3>
-                  <p class="text-gray-600 text-sm leading-relaxed">
-                    Durante todo o mês de junho, em comemoração ao Dia Mundial
-                    do Meio Ambiente, celebrado nesta quinta-feira, 5,
-                    instituições públicas, privadas e organizações da sociedade
-                    civil de Nova Friburgo promovem uma série de atividades com
-                    foco na educação ambiental, sustentabilidade e preservação
-                    dos recursos naturais.
+              <div class="bg-slate-50 rounded-xl shadow-md overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <img src="assets/im.jpg" alt="Família plantando" class="w-full h-48 object-cover"/>
+                <div class="p-6 flex flex-col flex-grow">
+                  <h3 class="font-semibold text-lg text-slate-800">Ações Sustentáveis em Nova Friburgo</h3>
+                  <p class="text-slate-600 text-sm leading-relaxed mt-2 flex-grow">
+                    Em comemoração ao Dia Mundial do Meio Ambiente, instituições promovem atividades com foco na educação ambiental e preservação de recursos.
                   </p>
-                  <div
-                    class="flex items-center gap-2 text-green-700 font-medium"
-                  >
-                    <a
-                      target="_blank"
-                      href="https://avozdaserra.com.br/noticias/mes-do-meio-ambiente-movimenta-nova-friburgo-com-acoes-sustentaveis"
-                    >
-                      <span class="recycle-icon">♻</span> Saiba Mais</a
-                    >
-                  </div>
+                  <a target="_blank" href="https://avozdaserra.com.br/noticias/mes-do-meio-ambiente-movimenta-nova-friburgo-com-acoes-sustentaveis" class="mt-4 font-semibold text-emerald-600 hover:text-emerald-800 self-start">Saiba Mais →</a>
+                </div>
+              </div>
+              <div class="bg-slate-50 rounded-xl shadow-md overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <img src="assets/selo.jpg " alt="Selo Clima Paraná" class="w-full h-48 object-cover"/>
+                <div class="p-6 flex flex-col flex-grow">
+                  <h3 class="font-semibold text-lg text-slate-800">Maringá Recebe Selo Clima Paraná</h3>
+                  <p class="text-slate-600 text-sm leading-relaxed mt-2 flex-grow">
+                    A cidade foi certificada com o Selo Clima Paraná Cidades por suas boas práticas ambientais e sociais, um reconhecimento entregue durante a Expoingá.
+                  </p>
+                  <a target="_blank" href="https://maringapost.com.br/cidade/2025/05/13/selo-clima-parana-cidades-maringa-recebe-certificacao-por-boas-praticas-ambientais-e-sociais/" class="mt-4 font-semibold text-emerald-600 hover:text-emerald-800 self-start">Saiba Mais →</a>
+                </div>
+              </div>
+              <div class="bg-slate-50 rounded-xl shadow-md overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <img src="assets/polui.jpg" alt="Poluição por Plástico" class="w-full h-48 object-cover"/>
+                <div class="p-6 flex flex-col flex-grow">
+                  <h3 class="font-semibold text-lg text-slate-800">Combate à Poluição por Plástico</h3>
+                  <p class="text-slate-600 text-sm leading-relaxed mt-2 flex-grow">
+                    O Dia do Meio Ambiente de 2025 tem como tema central o combate à poluição por plástico, mobilizando ações globais por um futuro mais sustentável.
+                  </p>
+                  <a target="_blank" href="https://boanoticiabrasil.com.br/2025/06/05/dia-mundial-do-meio-ambiente-2025/" class="mt-4 font-semibold text-emerald-600 hover:text-emerald-800 self-start">Saiba Mais →</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="flex flex-col w-1/3 bg-gray-100 p-8">
-          <div class="bg-white rounded-xl shadow-md p-6 mb-6">
-            <h2 class="font-bold text-gray-800 text-xl mb-4">
-              Pontos de Coleta Próximos
-            </h2>
-            <div
-              class="bg-gray-200 h-64 rounded-lg flex items-center justify-center text-gray-600"
-            >
-              [Placeholder do Mapa]
+        </main>
+        <aside class="hidden md:flex flex-col w-1/3 bg-slate-100 p-8 border-l border-slate-200">
+          <div class="bg-white rounded-2xl shadow-lg p-6 mb-8">
+            <h2 class="font-bold text-slate-800 text-xl mb-4">Pontos de Coleta Próximos</h2>
+            <div class="w-full h-80 rounded-lg overflow-hidden border border-slate-200">
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fYhf2ukbfD549lJV1ov5pOPvzqZKb70&ehbc=2E312F" style="width: 100%; height: calc(100% + 50px); border: 0; margin-top: -50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <p class="text-sm text-gray-500 mt-4">
-              Clique no mapa para ver detalhes dos pontos de coleta.
+            <p class="text-sm text-slate-500 mt-4 text-center">
+              Navegue no mapa para encontrar os pontos de descarte.
             </p>
           </div>
-
-          <div class="bg-green-800 rounded-xl shadow-md p-6 text-white">
-            <h2 class="font-bold text-xl mb-4">Informações de Coleta</h2>
-            <ul class="space-y-3 text-sm">
-              <li class="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2.5"
-                  stroke="currentColor"
-                  class="w-5 h-5 text-green-300"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.029M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm.75-13.5v.008v.007a.75.75 0 1 1-1.5 0v-.008v-.007a.75.75 0 0 1 1.5 0Z"
-                  />
-                </svg>
+          <div class="bg-emerald-700 rounded-2xl shadow-lg p-6 text-white">
+            <h2 class="font-bold text-xl mb-5">Informações de Coleta</h2>
+            <ul class="space-y-4 text-sm">
+              <li class="flex items-center gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-300"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
                 <span>Horários de funcionamento</span>
               </li>
-              <li class="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2.5"
-                  stroke="currentColor"
-                  class="w-5 h-5 text-green-300"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .59.237 1.157.659 1.575l6.802 6.802c.414.414 1.006.604 1.574.543a1.875 1.875 0 0 0 1.168-.484l5.348-5.348a1.875 1.875 0 0 0 .484-1.168 1.875 1.875 0 0 0-.543-1.574L13.177 3.659A2.25 2.25 0 0 0 11.02 3H9.568Z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 6h.008v.008H6V6Z"
-                  />
-                </svg>
+              <li class="flex items-center gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-300"><path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" /></svg>
                 <span>Tipos de materiais aceitos</span>
               </li>
-              <li class="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2.5"
-                  stroke="currentColor"
-                  class="w-5 h-5 text-green-300"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                  />
-                </svg>
+              <li class="flex items-center gap-4">
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-300"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
                 <span>Localização detalhada</span>
               </li>
             </ul>
-            <div class="flex justify-end mt-6">
-              <span class="text-7xl recycle-icon opacity-50">♻</span>
-            </div>
           </div>
-        </div>
+        </aside>
       </div>
+      <footer class="bg-slate-800 text-slate-300">
+        <div class="max-w-7xl mx-auto py-8 px-8 text-center">
+          <p>© 2025 EcoBairro. Construindo um futuro mais verde, juntos.</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
